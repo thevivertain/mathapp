@@ -1,0 +1,4 @@
+.navbar-nav :hover {
+  background-image: none;
+  background-color: #28a745;
+}
