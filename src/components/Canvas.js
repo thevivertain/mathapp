@@ -7,6 +7,7 @@ class Canvas extends Component {
     this.onMouseDown = this.onMouseDown.bind(this);
     this.onMouseMove = this.onMouseMove.bind(this);
     this.endPaintEvent = this.endPaintEvent.bind(this);
+    
   }
 
   isPainting = false;
@@ -96,6 +97,9 @@ class Canvas extends Component {
         onMouseLeave={this.endPaintEvent}
         onMouseUp={this.endPaintEvent}
         onMouseMove={this.onMouseMove}
+        onTouchStart={this.onMouseDown}
+        onTouchMove={this.onMouseMove}
+        onTouchEnd={this.endPaintEvent}
       />
     );
   }
